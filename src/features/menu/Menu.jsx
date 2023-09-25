@@ -7,9 +7,9 @@ function Menu() {
   const menu = useLoaderData();
   return (
     <ul>
-      {menu.map((pizza) => {
-        return <MenuItem pizza={pizza} key={pizza.id} />;
-      })}
+      {menu.map((pizza) => (
+        <MenuItem pizza={pizza} key={pizza.id} />
+      ))}
     </ul>
   );
 }
